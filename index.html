@@ -12,19 +12,17 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Benne:400,900&display=swap"
-        rel="stylesheet"
-      />
+    <link href="https://fonts.googleapis.com/css?family=Benne:400,900&display=swap" rel="stylesheet" />
     <!-- Custom CSS -->
     <style>
-        body{
+        body {
             font-family: "Benne", regular;
             font-weight: 400;
             background-color: #33535b;
             line-height: 0.8;
-            
+
         }
+
         .coming-soon {
             height: 100vh;
             display: flex;
@@ -37,13 +35,22 @@
 
         .logo {
             font-size: 30vh;
+            letter-spacing: -50px;
         }
+
 
         .soon {
             font-size: 5vh;
         }
 
+        .soon::after {
+            content: "";
+            letter-spacing: 0;
+            margin-left: -50px;
+        }
+
         .footer {
+            font-family: Sans-Serif;
             position: absolute;
             bottom: 10px;
             width: 100%;
@@ -52,9 +59,10 @@
         }
 
         .footer a {
-            color: white; /* Set the link color to white */
+            font-family: Sans-Serif;
+            color: white;
+            /* Set the link color to white */
         }
-        
     </style>
 
     <title>Coming Soon | Thoughtcap</title>
@@ -63,7 +71,7 @@
 <body>
     <div class="container coming-soon">
         <div class="logo">Tc</div>
-        <div class="soon">Soon...</div>
+        <div class="soon">soon...</div>
     </div>
 
     <div class="footer">
