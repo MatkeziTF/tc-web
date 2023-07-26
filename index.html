@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Benne:400,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Benne:400,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
     <style>
-        body {
-            font-family: "Benne", regular;
-            font-weight: 400;
-            background-color: #33535b;
-            line-height: 0.8;
+      body {
+        font-family: "Benne", regular;
+        font-weight: 400;
+        background-color: #33535b;
+        font-size: 1rem;
+      }
 
+      .coming-soon {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+
+      .logo {
+        font-size: 8rem;
+
+        @media screen and (min-width: 576px) {
+          font-size: 16rem;
         }
 
-        .coming-soon {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
+        @media screen and (min-width: 1200px) {
+          font-size: 16rem;
         }
 
-        .logo {
-            font-size: 30vh;
-            letter-spacing: -50px;
-            padding-right: 50px;
+        letter-spacing: -0.2em;
+        text-indent: -0.2em;
+        line-height: 60%;
+      }
+
+      .soon {
+        font-size: 2rem;
+        padding-left: 5%;
+
+        @media screen and (min-width: 576px) {
+          font-size: 3rem;
         }
 
+        @media screen and (min-width: 1200px) {
+          font-size: 3rem;
+        }
+      }
 
-        .soon {
-            font-size: 5vh;
-            padding-right: 25px;
+      .footer {
+        font-family: Sans-Serif;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        color: white;
+
+        font-size: 0.5rem;
+        padding-left: 5%;
+        @media screen and (min-width: 576px) {
+          font-size: 1rem;
+          padding-left: 2%;
         }
 
-        .soon::after {
-            content: "";
-            letter-spacing: 0;
-            margin-left: -50px;
+        @media screen and (min-width: 1200px) {
+          font-size: 1rem;
+          padding-left: 2%;
         }
+        
+      }
 
-        .footer {
-            font-family: Sans-Serif;
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-            color: white;
-        }
-
-        .footer a {
-            font-family: Sans-Serif;
-            color: white;
-            /* Set the link color to white */
-        }
+      .footer a {
+        font-family: Sans-Serif;
+        color: white;
+        /* Set the link color to white */
+      }
     </style>
 
     <title>Thoughtcap</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container coming-soon">
-        <div class="logo">Tc</div>
-        <div class="soon">soon...</div>
+      <div class="logo">Tc</div>
+      <div class="soon">soon...</div>
     </div>
 
     <div class="footer">
-        <p><a href="mailto:hello@thoughtcap.com">hello@thoughtcap.com</a></p>
+      <p><a href="mailto:hello@thoughtcap.com">hello@thoughtcap.com</a></p>
     </div>
 
     <!-- Optional JavaScript -->
@@ -85,6 +113,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
